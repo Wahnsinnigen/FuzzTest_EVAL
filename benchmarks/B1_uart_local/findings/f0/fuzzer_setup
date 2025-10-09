@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/home/xsy/Documents/Project/Fuzz _Test/FuzzTest_EVAL/benchmarks/bin/firmware_host
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@
+AFL_CUSTOM_INFO_OUT=findings/f0
+# command line:
+'afl-fuzz' '-M' 'f0' '-i' 'seeds' '-o' 'findings' '-m' 'none' '-t' '2000' '--' '/home/xsy/Documents/Project/Fuzz _Test/FuzzTest_EVAL/benchmarks/bin/firmware_host' '@@'

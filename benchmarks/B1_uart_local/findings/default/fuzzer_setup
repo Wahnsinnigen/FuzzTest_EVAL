@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=./bin/firmware_host
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@
+AFL_CUSTOM_INFO_OUT=./B1_uart_local/findings/default
+# command line:
+'afl-fuzz' '-i' './B1_uart_local/seeds' '-o' './B1_uart_local/findings' '-m' 'none' '-t' '1000' '--' './bin/firmware_host' '@@'
